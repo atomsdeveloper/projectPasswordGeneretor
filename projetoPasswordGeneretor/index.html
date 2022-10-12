@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="./css/style.css">
+    <title> Gerador de Senhas </title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="passwordGeneretor"> 
+                <div class="boxPasswordGeneretor">
+                    <p> Tamanho de <span id="numbersCharacter"></span> caracteres... </p>
+                    <input type="range" id="rangeNumbers" min="4" max="16" value="12">
+                    <button id="passwordGeneretor" class="btnGeneretor" onclick="gerar()"> Gerar Senha </button>
+                </div>   
+            </div>
+    
+            <div id="viewPassword" class="viewPassword">
+                <p class="title"> Sua senha gerada :</p>
+                <span id="password" class="password"> </span>
+            </div>
+        </div>
+    </div>    
+    <script src="./controller/app.js"></script>
+</body>
+</html>
